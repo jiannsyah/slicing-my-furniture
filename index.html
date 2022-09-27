@@ -4,11 +4,2047 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="dist/output.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- header start -->
+    <header class="bg-primary absolute top-0 left-0 w-full h-[100px] z-10">
+      <div>
+        <div class="container">
+          <div class="flex items-center justify-between relative">
+            <div class="basis-1/2 sm:basis-2/5">
+              <span
+                class="nav-furniture inline-block text-white font-bold text-[18px] md:text-[24px] leading-[100px] ml-5"
+                ><span class="inline-block text-secondary"> MY </span>FURNITURE
+              </span>
+            </div>
+            <div class="basis-1/2 sm:basis-3/5">
+              <div class="flex items-center">
+                <button
+                  id="hamburger"
+                  name="hamburger"
+                  type="button"
+                  class="block absolute lg:hidden right-10"
+                >
+                  <span
+                    class="hamburger-line transition duration-500 ease-in-out origin-top-left"
+                  >
+                  </span>
+                  <span
+                    class="hamburger-line transition duration-500 ease-in-out"
+                  >
+                  </span>
+                  <span
+                    class="hamburger-line transition duration-500 ease-in-out origin-bottom-left"
+                  >
+                  </span>
+                </button>
+                <nav
+                  id="nav-menu"
+                  class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-10 top-24 lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none z-10"
+                >
+                  <ul
+                    class="block lg:flex items-center justify-around text-primary lg:text-white md:text-[12px] lg:text-[16px] nav-list"
+                  >
+                    <li class="group">
+                      <a
+                        href="#beranda"
+                        class="group-hover:text-secondary py-4 mx-6 flex"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="group">
+                      <a
+                        href="#services"
+                        class="group-hover:text-secondary py-4 mx-6 flex"
+                        >Services</a
+                      >
+                    </li>
+                    <li class="group">
+                      <a
+                        href="#product"
+                        class="group-hover:text-secondary py-4 mx-6 flex"
+                        >Product</a
+                      >
+                    </li>
+                    <li class="group">
+                      <a
+                        href="#blog"
+                        class="group-hover:text-secondary py-4 mx-6 flex"
+                        >Blog</a
+                      >
+                    </li>
+                    <li class="group">
+                      <a
+                        href="#contact"
+                        class="group-hover:text-secondary py-4 mx-6 flex"
+                        >Contact
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          src="src/img/profile.png"
+                          alt=""
+                          class="py-4 mx-6 flex"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img
+                          src="src/img/basket.png"
+                          alt=""
+                          class="py-4 mx-6 flex"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- header end -->
+    <!-- hero start -->
+    <section id="beranda" class="bg-primary mt-[100px] w-full">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row">
+          <!-- relative lg:static -->
+          <div class="basis-1 lg:basis-2/5">
+            <div class="ml-5 mr-5 md:mr-20 lg:mr-0 pt-40">
+              <span
+                class="capitalize font-bold text-[32px] md:text-[40px] text-secondary mb-[28px] block"
+              >
+                make your interior more modern and minimalist
+              </span>
+              <span
+                class="font-secondary font-normal text-[18px] lg:text-[20px] text-white block mb-[20px] lg:tracking-wide"
+              >
+                There are several product variants that you can choose, both
+                local and foreign brands
+              </span>
+              <ul class="flex mb-12 text-[14px] md:text-[18px]">
+                <li
+                  class="py-4 px-6 md:py-6 md:px-12 mr-6 border border-secondary rounded-md group hover:bg-secondary"
+                >
+                  <a href="#" class="text-secondary group-hover:text-primary"
+                    >Buy Now</a
+                  >
+                </li>
+                <li
+                  class="py-4 px-6 md:py-6 md:px-12 border border-secondary rounded-md group hover:bg-secondary"
+                >
+                  <a href="#" class="text-secondary group-hover:text-primary"
+                    >Learn More</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="basis-1 lg:basis-3/5 invisible lg:visible">
+            <div class="relative flex w-full lg:h-full">
+              <img
+                src="src/img/jam.png"
+                alt=""
+                class="absolute top-0 right-5 scale-90 lg:scale-100 lg:top-12 lg:right-0"
+              />
+              <img
+                src="src/img/sofa.png"
+                alt=""
+                class="absolute ml-3 right-5 -bottom-20 scale-90 lg:scale-100 lg:left-12"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+    <!-- services start -->
+    <section id="services">
+      <div class="container">
+        <div class="pt-52 lg:pt-56 flex justify-center items-center flex-col">
+          <span class="font-bold text-[30px]">Our Services</span>
+          <span
+            class="mt-5 mb-24 font-normal text-[16px] sm:text-[18px] font-secondary"
+          >
+            We provide quality and comfortable interior fittings</span
+          >
+          <!-- card start -->
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between lg:items-center lg:w-full"
+          >
+            <div
+              class="flex justify-around items-center px-5 py-6 border-2 rounded-xl bg-primary mt-6 lg:mt-0"
+            >
+              <div class="flex flex-col ml-4">
+                <span
+                  class="font-secondary text-[16px] text-white font-normal mb-2"
+                  >Minimal Design</span
+                >
+                <span class="font-bold text-[22px] lg:text-[26px] text-white"
+                  >Classic <br />
+                  Softchair</span
+                >
+                <div class="mt-6 cursor-pointer group">
+                  <ul
+                    class="flex justify-center items-center border-2 border-secondary rounded-md w-[117px] h-[52px]"
+                  >
+                    <li>
+                      <!-- class="mr-[10px] w-[15px] h-[17px]" -->
+                      <a href="#" class="text-secondary">
+                        <svg
+                          role="img"
+                          class="fill-current mr-[10px] hover:text-primary"
+                          width="15"
+                          height="17"
+                          viewBox="0 0 24 27"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                            fill="#DDC190"
+                          />
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="text-secondary">Shop</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ml-20">
+                <img
+                  src="src/img/chair-classic.png"
+                  alt=""
+                  class="w-full h-[185px]"
+                />
+              </div>
+            </div>
+            <div
+              class="flex justify-around items-center px-5 py-6 border-2 rounded-xl bg-primary mt-6 lg:mt-0"
+            >
+              <div class="flex flex-col ml-4">
+                <span
+                  class="font-secondary text-[16px] text-white font-normal mb-2"
+                  >Modern Design</span
+                >
+                <span class="font-bold text-[22px] lg:text-[26px] text-white"
+                  >Elegant <br />
+                  Simplechair</span
+                >
+                <div class="mt-6">
+                  <ul
+                    class="flex justify-center items-center border-2 border-secondary rounded-md w-[117px] h-[52px]"
+                  >
+                    <li>
+                      <img
+                        src="src/img/basket.png"
+                        alt=""
+                        class="mr-[10px] w-[15px] h-[17px]"
+                      />
+                    </li>
+                    <li class="text-secondary">Shop</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ml-20">
+                <img src="src/img/chair-elegant.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="flex justify-around items-center px-5 py-6 border-2 rounded-xl bg-primary mt-6 lg:mt-0"
+            >
+              <div class="flex flex-col ml-4">
+                <span
+                  class="font-secondary text-[16px] text-white font-normal mb-2"
+                  >Modern Design</span
+                >
+                <span class="font-bold text-[22px] lg:text-[26px] text-white"
+                  >Comfort <br />
+                  chair</span
+                >
+                <div class="mt-6">
+                  <ul
+                    class="flex justify-center items-center border-2 border-secondary rounded-md w-[117px] h-[52px]"
+                  >
+                    <li>
+                      <img
+                        src="src/img/basket.png"
+                        alt=""
+                        class="mr-[10px] w-[15px] h-[17px]"
+                      />
+                    </li>
+                    <li class="text-secondary">Shop</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="ml-20">
+                <img src="src/img/chair-comfort.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- card end -->
+        </div>
+        <!-- promo start -->
+        <div class="mt-[170px]">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between bg-primary rounded-xl"
+          >
+            <div class="basis-1 lg:basis-1/2">
+              <div
+                class="pt-[57px] lg:pl-[111px] lg:items-start flex flex-col items-center"
+              >
+                <span
+                  class="mb-3 font-normal text-[16px] sm:text-[20px] text-white"
+                  >Black Friday</span
+                >
+                <span
+                  class="mb-9 font-bold text-[28px] sm:text-[34px] text-white"
+                  >Sale Up To <span class="text-secondary">50%</span> Off</span
+                >
+                <div
+                  class="w-[187px] h-[71px] py-6 px-12 mb-[57px] bg-secondary rounded-lg"
+                >
+                  <span class="font-bold text-[18px]">Shop Now</span>
+                </div>
+              </div>
+            </div>
+            <!-- gambar promo start -->
+            <div
+              class="basis-1 invisible lg:visible lg:basis-1/2 relative overflow-hidden"
+            >
+              <img
+                src="src/img/sofa.png"
+                alt=""
+                class="scale-75 absolute top-28"
+              />
+            </div>
+            <!-- gambar promo end -->
+          </div>
+        </div>
+        <!-- promo end -->
+      </div>
+    </section>
+    <!-- services end -->
+    <!-- product start -->
+    <section id="product">
+      <div class="container">
+        <!-- populer categories start -->
+        <div class="flex flex-col text-third">
+          <span class="pt-[200px] mb-3 self-center font-bold text-[30px]"
+            >Our Product</span
+          >
+          <span
+            class="text-[18px] font-secondary self-center tracking-[0.025em] mb-[100px]"
+            >Available for all your needs</span
+          >
+          <div class="flex justify-between">
+            <div class="flex justify-center items-center">
+              <span
+                class="font-bold text-[18px] sm:text-[24px] self-center mb-12"
+                >Populer Categories</span
+              >
+            </div>
+            <div>
+              <ul class="flex">
+                <li
+                  class="flex w-[50px] h-[50px] border rounded-full justify-center items-center bg-secondary"
+                >
+                  <a href="" id="l-arrow">
+                    <img
+                      src="src/img/l-arrow.png"
+                      alt=""
+                      class="navigate-left w-[18px] h-[29px]"
+                    />
+                  </a>
+                </li>
+                <li
+                  class="flex w-[50px] h-[50px] ml-4 border rounded-full justify-center items-center bg-secondary"
+                >
+                  <a href="" id="r-arrow">
+                    <img
+                      src="src/img/r-arrow.png"
+                      alt=""
+                      class="navigate-right w-[18px] h-[29px]"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="swiper mySwiperPopuler w-full">
+            <div class="swiper-wrapper w-full">
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/chair-classic.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Chair</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <a
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                  >
+                    <svg
+                      role="img"
+                      width="25"
+                      height="27"
+                      class="fill-current"
+                      viewBox="0 0 25 27"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                      />
+                    </svg>
+
+                    <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/sofa.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Sofa</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <div
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-secondary"
+                  >
+                    <a
+                      class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                    >
+                      <svg
+                        role="img"
+                        width="25"
+                        height="27"
+                        class="fill-current"
+                        viewBox="0 0 25 27"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                        />
+                      </svg>
+
+                      <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/lamp.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Lamp</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <div
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-secondary"
+                  >
+                    <a
+                      class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                    >
+                      <svg
+                        role="img"
+                        width="25"
+                        height="27"
+                        class="fill-current"
+                        viewBox="0 0 25 27"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                        />
+                      </svg>
+
+                      <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/table.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Desk</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <div
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-secondary"
+                  >
+                    <a
+                      class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                    >
+                      <svg
+                        role="img"
+                        width="25"
+                        height="27"
+                        class="fill-current"
+                        viewBox="0 0 25 27"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                        />
+                      </svg>
+
+                      <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/sofa.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Chair</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <div
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-secondary"
+                  >
+                    <a
+                      class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                    >
+                      <svg
+                        role="img"
+                        width="25"
+                        height="27"
+                        class="fill-current"
+                        viewBox="0 0 25 27"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                        />
+                      </svg>
+
+                      <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/sofa.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Chair</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <div
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-secondary"
+                  >
+                    <a
+                      class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                    >
+                      <svg
+                        role="img"
+                        width="25"
+                        height="27"
+                        class="fill-current"
+                        viewBox="0 0 25 27"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                        />
+                      </svg>
+
+                      <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[300px]">
+                <div
+                  class="w-[300px] h-[260px] border-2 border-primary rounded-md mb-11 flex justify-center items-center"
+                >
+                  <img src="src/img/sofa.png" class="scale-75" />
+                </div>
+                <div class="flex justify-between w-[300px]">
+                  <div class="flex flex-col">
+                    <span
+                      class="py-3 px-9 bg-primary text-white font-bold text-[16px]"
+                      >Chair</span
+                    >
+                    <span class="mt-[10px] text-[18px] text-third">
+                      30 Product</span
+                    >
+                  </div>
+                  <div
+                    class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-secondary"
+                  >
+                    <a
+                      class="w-[80px] h-[80px] flex items-center justify-center rounded-md bg-white hover:bg-secondary border-2 border-secondary text-secondary hover:text-primary cursor-pointer transition duration-500 ease-in-out"
+                    >
+                      <svg
+                        role="img"
+                        width="25"
+                        height="27"
+                        class="fill-current"
+                        viewBox="0 0 25 27"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                        />
+                      </svg>
+
+                      <!-- <img
+                          src="src/img/basket-product.png"
+                          alt=""
+                          class="w-[25px] h-[25px]"
+                        /> -->
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- populer categories end -->
+        <!-- New arrival product start -->
+        <div class="flex flex-col">
+          <span class="font-bold text-[24px] text-third pt-[107px] pb-[67px]"
+            >New Arrival Product</span
+          >
+          <div class="flex flex-wrap justify-around">
+            <!-- card product start -->
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <div class="w-[300px] h-[415px] mb-6 shadow-lg">
+              <div
+                class="w-full h-[260px] bg-primary py-[29px] px-[87px] relative rounded-t-lg"
+              >
+                <img src="src/img/chair-elegant.png" alt="" />
+                <!-- class="w-[32px] h-[30px] absolute right-3 top-3" -->
+                <a href="" class="w-[33px] h-[30px]">
+                  <svg
+                    role="img"
+                    width="33"
+                    height="30"
+                    class="fill-current absolute right-3 top-3 text-white hover:text-pink-500 duration-500 transition ease-in-out"
+                    viewBox="0 0 33 30"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M14.5669 26.9343L14.5655 26.933C10.3615 23.1208 6.9525 20.0234 4.58286 17.1243C2.22421 14.2387 1 11.6719 1 8.9375C1 4.46973 4.48359 1 8.9375 1C11.4627 1 13.9029 2.18071 15.4912 4.03128L16.25 4.91543L17.0088 4.03128C18.5971 2.18071 21.0373 1 23.5625 1C28.0164 1 31.5 4.46973 31.5 8.9375C31.5 11.6719 30.2758 14.2387 27.9171 17.1243C25.5475 20.0234 22.1385 23.1208 17.9345 26.933L17.9331 26.9343L16.25 28.4664L14.5669 26.9343Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <div
+                class="w-full h-[155px] ml-[19px] flex flex-col relative rounded-b-lg"
+              >
+                <span class="pt-[21px] font-bold text-[18px]"
+                  >Chair Minimalist</span
+                >
+                <ul class="flex justify-start pt-[11px]">
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-[4px] w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <img
+                        src="src/img/star.png"
+                        alt=""
+                        class="mr-2 w-[17px] h-[16px]"
+                      />
+                    </a>
+                  </li>
+                  <li
+                    class="inline-block text-[15px] leading-[16px] font-secondary"
+                  >
+                    (19k)
+                  </li>
+                </ul>
+                <span class="pt-[30px] font-bold text-[24px] text-third">
+                  $600.00
+                </span>
+                <a
+                  class="w-[70px] h-[70px] absolute bottom-0 right-5 border-2 border-secondary rounded-tl-md rounded-br-md flex justify-center items-center cursor-pointer hover:bg-secondary text-secondary hover:text-primary duration-500 transition ease-in-out"
+                >
+                  <svg
+                    role="img"
+                    width="24"
+                    height="27"
+                    class="fill-current"
+                    viewBox="0 0 24 27"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.66667 27H21.3333C22.804 27 24 25.7891 24 24.3V9.45C24 9.09196 23.8595 8.74858 23.6095 8.49541C23.3594 8.24223 23.0203 8.1 22.6667 8.1H18.6667V6.75C18.6667 3.02805 15.676 0 12 0C8.324 0 5.33333 3.02805 5.33333 6.75V8.1H1.33333C0.979711 8.1 0.640573 8.24223 0.390524 8.49541C0.140476 8.74858 0 9.09196 0 9.45V24.3C0 25.7891 1.196 27 2.66667 27ZM8 6.75C8 4.5171 9.79467 2.7 12 2.7C14.2053 2.7 16 4.5171 16 6.75V8.1H8V6.75ZM2.66667 10.8H5.33333V13.5H8V10.8H16V13.5H18.6667V10.8H21.3333L21.336 24.3H2.66667V10.8Z"
+                    />
+                  </svg>
+                  <!-- class="w-[24px] h-[27px] fill-current hover:text-primary" -->
+                </a>
+              </div>
+            </div>
+            <!-- card product end -->
+          </div>
+          <div class="flex justify-center">
+            <div
+              class="w-[260px] h-[55px] mt-[103px] flex justify-center items-center bg-secondary rounded-md"
+            >
+              <span class="py-[16px] px-6 font-bold text-[18px] text-third">
+                Go Shop for View More</span
+              >
+            </div>
+          </div>
+        </div>
+        <!-- New arrival product end -->
+        <!-- hotdeal start -->
+        <div class="flex flex-wrap justify-evenly mt-[196px]">
+          <div
+            class="w-[620px] h-[280px] mb-[20px] bg-primary flex justify-between"
+          >
+            <div class="flex flex-col pl-[20px] sm:pl-[60px]">
+              <span
+                class="pt-[42px] font-light text-[18px] sm:text-[20px] text-white"
+                >Hot Deal</span
+              >
+              <span
+                class="pt-[14px] font-bold text-[22px] sm:text-[30px] text-white"
+                >Sofa Premium <br />
+                comfort</span
+              >
+              <div class="flex">
+                <span
+                  class="text-[16px] sm:text-[20px] pt-[40px] mr-[28px] font-normal text-white line-through"
+                  >$700.00</span
+                >
+                <span
+                  class="text-[16px] sm:text-[20px] pt-[40px] font-normal text-secondary"
+                  >$500.00</span
+                >
+              </div>
+            </div>
+            <div class="pr-[18px] sm:pr-[49px] pt-[34px] sm:pt-[28px]">
+              <img
+                src="src/img/chair-comfort.png"
+                alt=""
+                class="w-[150px] sm:w-[170px] h-[180px] sm:h-[203px]"
+              />
+            </div>
+          </div>
+          <div
+            class="w-[620px] h-[280px] mb-[20px] bg-primary flex justify-between"
+          >
+            <div class="flex flex-col pl-[20px] sm:pl-[60px]">
+              <span
+                class="pt-[42px] font-light text-[18px] sm:text-[20px] text-white"
+                >Hot Deal</span
+              >
+              <span
+                class="pt-[14px] font-bold text-[22px] sm:text-[30px] text-white"
+                >Sofa Premium <br />
+                comfort</span
+              >
+              <div class="flex">
+                <span
+                  class="text-[16px] sm:text-[20px] pt-[40px] mr-[28px] font-normal text-white line-through"
+                  >$700.00</span
+                >
+                <span
+                  class="text-[16px] sm:text-[20px] pt-[40px] font-normal text-secondary"
+                  >$500.00</span
+                >
+              </div>
+            </div>
+            <div class="pr-[18px] sm:pr-[49px] pt-[34px] sm:pt-[28px]">
+              <img
+                src="src/img/chair-comfort.png"
+                alt=""
+                class="w-[150px] sm:w-[170px] h-[180px] sm:h-[203px]"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- hot deal end  -->
+      </div>
+    </section>
+    <!-- product end -->
+    <!-- blog start -->
+    <section id="blog">
+      <div class="container">
+        <div class="flex flex-col justify-center items-center pt-[169px]">
+          <span class="font-bold text-[30px]">Latest Blog</span>
+          <span class="font-secondary text-[18px] pt-[16px] text-center"
+            >We provide a variety of interisting information about the
+            interior</span
+          >
+          <!-- card blog start  -->
+          <div
+            class="swiper mySwiperBlog w-[100%] h-[600px] pt-[101px] px-3 sm:px-0"
+          >
+            <div class="swiper-wrapper w-[100%] h-[1000px]">
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                  <!-- <div class="pt-[29px]">
+                      <span
+                        class="py-2 px-6 bg-secondary rounded-md font-bold text-[14px] text-third"
+                        >Read More</span
+                      >
+                    </div> -->
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide w-[312px] h-[475px] shadow-lg">
+                <div class="rounded-md flex justify-center items-center">
+                  <img src="src/img/blog img.png" class="w-[312px] h-[200px]" />
+                </div>
+                <div class="flex flex-col pl-[10px]">
+                  <span class="pt-[26px] font-bold text-[24px]"
+                    >How To Make A Room Look Neat</span
+                  >
+                  <span class="text-[14px] text-third font-secondary">
+                    22 November 2021</span
+                  >
+                  <span
+                    class="text-[16px] text-third font-secondary w-[215px] pt-[7px]"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing. Cum...
+                  </span>
+                  <div class="pt-[29px] w-[134px] h-[36px]">
+                    <a
+                      href="#"
+                      class="cursor-pointer block py-2 px-6 bg-white hover:bg-secondary rounded-md font-bold text-[14px] text-third duration-500 transition ease-in-out"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="relative h-[20px] w-[100vw]">
+            <div class="swiper-pagination h-[20px] absolute"></div>
+          </div>
+          <!-- card blog end -->
+        </div>
+      </div>
+    </section>
+    <!-- blog end -->
+    <!-- contact-start -->
+    <section id="contact">
+      <div class="container">
+        <div class="flex flex-col justify-center items-center">
+          <span class="pt-52 font-bold text-[30px] text-third">Contact Us</span>
+          <span class="pt-4 text-[18px] text-third"
+            >We serve you all the time</span
+          >
+          <div class="flex flex-col lg:flex-row justify-center pt-[100px]">
+            <img
+              src="src/img/contact us.png"
+              alt=""
+              class="invisible absolute lg:static lg:visible lg:w-[648px] lg:h-[562px] lg:mr-[20px]"
+            />
+            <form action="">
+              <div
+                class="flex flex-col justify-start w-[100vw] lg:w-[648px] text-third md:mt-6 lg:mt-0 px-3 lg:px-0"
+              >
+                <label for="name" class="font-bold text-[16px] mb-3"
+                  >Fullname</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full mb-[34px] bg-form p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                />
+                <label for="email" class="font-bold text-[16px] mb-3"
+                  >Email Addres</label
+                >
+                <input
+                  type="text"
+                  id="email"
+                  class="w-full mb-[34px] bg-form p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                />
+                <label for="message" class="font-bold text-[16px] mb-3"
+                  >Message</label
+                >
+                <textarea
+                  type="text"
+                  id="message"
+                  class="w-full h-[183px] mb-[34px] bg-form p-3 rounded-md focus:outline-none focus:ring-primary focus:ring-1 focus:border-primary"
+                ></textarea>
+              </div>
+              <div
+                class="mt-2 w-[100vw] lg:w-full py-5 bg-secondary rounded-md flex justify-center items-center px-3 lg:px-0"
+              >
+                <button
+                  type="submit"
+                  class="font-bold text-[16px] hover:opacity-80"
+                >
+                  Send Mail
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact-end -->
+    <!-- footer start -->
+    <section
+      id="footer"
+      class="mt-[263px] bg-primary rounded-t-[30px] lg:rounded-t-[50px]"
+    >
+      <div class="container">
+        <div class="flex flex-col lg:flex-row">
+          <div class="lg:basis-2/5 basis-1">
+            <div class="flex lg:justify-center md:justify-start pl-8 lg:pl-0">
+              <div class="flex flex-col pt-32">
+                <span class="font-bold text-[30px] text-white"
+                  ><span class="text-secondary">MY</span>FURNITURE</span
+                >
+                <span class="pt-12 text-[20px] font-light font-third text-white"
+                  >help@iplant.com</span
+                >
+                <span class="pt-7 text-[20px] font-light font-third text-white"
+                  >+6285342256800</span
+                >
+                <div class="flex pt-[62px] pb-[82px]">
+                  <a
+                    href="https://api.whatsapp.com/send/?phone=6285342256800&text&type=phone_number&app_absent=0"
+                    target="_blank"
+                    class="w-10 h-10 mr-7 rounded-full flex justify-center items-center text-primary bg-secondary duration-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+                  >
+                    <svg
+                      role="img"
+                      class="fill-current"
+                      width="40"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/?hl=id"
+                    target="_blank"
+                    class="w-10 h-10 mr-7 rounded-full flex justify-center items-center text-primary bg-secondary duration-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+                  >
+                    <svg
+                      role="img"
+                      class="fill-current"
+                      width="40"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Instagram</title>
+                      <path
+                        d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                      />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/?hl=id"
+                    target="_blank"
+                    class="w-10 h-10 mr-7 rounded-full flex justify-center items-center text-secondary bg-primary duration-500 transition ease-in-out hover:border-primary hover:bg-primary hover:text-white"
+                  >
+                    <svg
+                      role="img"
+                      class="fill-current"
+                      width="40"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Facebook</title>
+                      <path
+                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lg:basis-3/5 basis-1">
+            <div
+              class="flex flex-wrap justify-between lg:justify-evenly text-white lg:pt-32 md:pt-8"
+            >
+              <ul class="flex flex-col mt-3 lg:mt-0">
+                <li class="mb-[35px]">
+                  <span class="font-bold text-[20px]">Services</span>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">House Plant</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Garden Plant</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Vase</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Fertilizer</a>
+                </li>
+              </ul>
+              <ul class="flex flex-col mt-3 lg:mt-0">
+                <li class="mb-[35px]">
+                  <span class="font-bold text-[20px]">Information</span>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Office Hours</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Requirements</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">About Us</a>
+                </li>
+              </ul>
+              <ul class="flex flex-col mt-3 lg:mt-0">
+                <li class="mb-[35px]">
+                  <span class="font-bold text-[20px]">Helpfull Link</span>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Service</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Support</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Term & Condition</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Privacy Policy</a>
+                </li>
+              </ul>
+              <ul class="flex flex-col flex-wrap mt-3 lg:mt-0">
+                <li class="mb-[35px]">
+                  <span class="font-bold text-[20px]">Address</span>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px]">Jakarta Timur</a>
+                </li>
+                <li class="mb-[18px]">
+                  <a href="#" class="text-[18px] text-blue-600">Goggle Maps</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center items-center pb-[40px] pt-10 lg:pt-0">
+          <span
+            class="block text-white font-third font-thin text-[14px] lg:text-[20px] text-center"
+          >
+            &copy; Copyright 2021 All Right Reserve | Built Figma by
+            <span class="font-bold">Mardha Mardiya</span> | Slicing by
+            <span class="font-bold">Jiannsyah</span> with Tailwind CSS
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- footer end -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="src/js/script.js"></script>
+    <script src="src/js/swiperblog.js"></script>
   </body>
 </html>
